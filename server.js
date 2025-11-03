@@ -70,11 +70,8 @@ RULES:
   }
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Fathr AI Coach running safely on port ${port}`);
-});
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+// FIXED: Only ONE port declaration
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Fathr AI Coach running safely on port ${PORT}`);
 });
