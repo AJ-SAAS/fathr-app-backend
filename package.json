@@ -1,12 +1,12 @@
 {
-  "name": "fathr-chat-backend",
+  "name": "fathr-app-backend",
   "version": "1.0.0",
-  "type": "module",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "openai": "^5.6.0"
   }
 }
